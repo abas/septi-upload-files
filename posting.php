@@ -15,13 +15,12 @@ if(move_uploaded_file($getDir,'image/post/'.$filename)){
   echo "success upload image\n";
   if ($conn->query($sql) === TRUE) {
     echo "new post successfully posted";
+    header('Location:'.'index.php');
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }
   $conn->close();
 }else{
-  echo "fail";
+  echo "failed to upload";
   $conn->close();
 }
-
-header('Location:'.'index.php');

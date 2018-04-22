@@ -10,7 +10,7 @@
   <html lang="en">
 
   <head>
-    <title>Campus Station | Home</title>
+    <title>Septi | Web Lanjut</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -63,42 +63,47 @@
         <?php } ?>
       </ul>
     </div>
-    
-    
-      <form class="form-control" action="posting.php" method="post" enctype="multipart/form-data">
-        <label for="judul">Judul</label>
-        <input type="text" name="judul" id="" placeholder="masukkan judul kampanye">
 
-        <label for="image">Image</label>
-        <input type="file" name="image" id="">
 
+    <form class="form-control" action="posting.php" method="post" enctype="multipart/form-data">
+      <label for="judul">Judul Tugas</label>
+      <input type="text" name="judul" id="" placeholder="masukkan judul kampanye">
+
+      <label for="image">File</label>
+      <input type="file" name="image" id="">
+
+      <div style="display:none;">
         <label for="dana">Dana Dibutuhkan</label>
-        <input type="number" name="dana" id="" placeholder="masukkan dana yang anda butuhkan, ex:1000000">
-          
-        <label for="deskripsi">Deskripsi</label>
-        <textarea name="deskripsi" id="" placeholder="masukkan deskripsi kampanye"></textarea>
-        
-        <input name="user" type="text" value="<?php echo $data['username'];?>" style="display:none;">
+        <input type="number" name="dana" value="0" id="" placeholder="masukkan dana yang anda butuhkan, ex:1000000">
+      </div>    
 
-        <button class="btn bg-teal white pointer" TYPE="submit" name="upload">Posting</button>
-      </form>
-      
+      <label for="deskripsi">Deskripsi</label>
+      <textarea name="deskripsi" id="" placeholder="masukkan deskripsi kampanye"></textarea>
+
+      <input name="user" type="text" value="<?php echo $data['username'];?>" style="display:none;">
+
+      <button class="btn bg-teal white pointer" TYPE="submit" name="upload">Upload</button>
+    </form>
+
     <script>
-      document.querySelector('#top').scrollIntoView( {
+      document.querySelector('#top').scrollIntoView({
         behavior: 'smooth'
       });
-      function toTop(){
-        document.querySelector('#top').scrollIntoView( {
+
+      function toTop() {
+        document.querySelector('#top').scrollIntoView({
           behavior: 'smooth'
         });
       }
-      function toMostView(){
-        document.querySelector('#mostview').scrollIntoView( {
+
+      function toMostView() {
+        document.querySelector('#mostview').scrollIntoView({
           behavior: 'smooth'
         });
       }
-      function toTopCampaign(){
-        document.querySelector('#topcampaign').scrollIntoView( {
+
+      function toTopCampaign() {
+        document.querySelector('#topcampaign').scrollIntoView({
           behavior: 'smooth'
         });
       }

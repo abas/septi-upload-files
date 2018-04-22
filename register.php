@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Campus Station | Register</title>
+    <title>Register</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,8 +20,8 @@
     <div class="login-page">
         <form action="registerUser.php" method="POST">
             <div class="imgcontainer">
-                <img src="image/ico.png" alt="Avatar" class="avatar">
-                <h3>Campus Station</h3>
+                <!-- <img src="image/ico.png" alt="Avatar" class="avatar"> -->
+                <h3>Register</h3>
             </div>
             
             <div class="container" style="text-align: left;">
