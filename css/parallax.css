@@ -1,0 +1,13 @@
+.parallax {
+    /* The image used */
+    background-image: url('http://trendingfan.com/wp-content/uploads/2017/09/Guitar-Wallpapers-HD-Pictures.jpg');
+
+    /* Set a specific height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

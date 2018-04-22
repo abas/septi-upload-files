@@ -1,0 +1,30 @@
+--  ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7
+CREATE DATABASE abas;
+CREATE TABLE `user` (
+  `id` INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  `username` VARCHAR(30) NOT NULL,
+  `email` VARCHAR(30) NOT NULL,
+  `password` VARCHAR(50) NOT NULL,
+  `session` INTEGER(5) DEFAULT 0,
+  `reg_date` TIMESTAMP,
+  `type` ENUM('admin','user') DEFAULT 'user'
+);
+
+CREATE TABLE `donation` (
+  `id` INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(30) NOT NULL,
+  `email` VARCHAR(30) NOT NULL,
+  `fee` INTEGER NOT NULL,
+  `reg_date` TIMESTAMP
+);
+
+CREATE TABLE `post` (
+  `id` INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  `judul` VARCHAR(128) NOT NULL,
+  `dana` INTEGER NOT NULL,
+  `deskripsi` TEXT NOT NULL,
+  `image` VARCHAR(128) NOT NULL,
+  `user` VARCHAR(128) NOT NULL,
+  `most` INTEGER(2) DEFAULT 0,
+  `top` INTEGER(2) DEFAULT 0
+);

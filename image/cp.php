@@ -1,0 +1,1 @@
+<?php copy('ico.png','post/ico.png');

@@ -1,0 +1,28 @@
+.white{
+    color:white;
+}
+.teal{
+    color: #3FB9A4;
+}
+.black{
+    color: black;
+}
+.red{
+    color: #ff3300;
+}
+.bg-white{
+    background-color:white;
+}
+.bg-teal{
+    background-color: #3FB9A4;
+}
+.bg-black{
+    background-color: black;
+}
+.bg-red{
+    background-color: #ff3300;
+}
+.bg-grey{
+    background-color: #444;
+}
+
